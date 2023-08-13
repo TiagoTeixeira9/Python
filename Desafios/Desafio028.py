@@ -8,6 +8,6 @@ jogador = int(input("Em que número eu pensei? ")) # Jogador tenta adivinhar
 print("PROCESSANDO...")
 sleep(3)
 if jogador == computador:
-    print("Parabéns conseguiste-me vencer!")
+    print("\033[32mParabéns conseguiste-me vencer!\033[m")
 else:
-    print("Ganhei! Eu pensei no número {} e não no {}!".format(computador, jogador))
+    print("\033[31mGanhei! Eu pensei no número {} e não no {}!\033[m".format(computador, jogador))
